@@ -1,14 +1,32 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Home</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
+  <h3>MOLPAY</h3>
+
+  <div class="app">
+    <div style="background-color: #72529b; text-align: right; float: left; width: 100%; height: 44px; z-index: 10">
+      <button style="border: 0px; color: #FFFFFF; background-color: transparent; margin: 15px" onclick="window.molpay.closeMolpay()">Close</button>
+    </div>
+    <div id="molpay" class="molpay" style="position: absolute; top: 44px; bottom: 0px"> </div>
+    <!-- <div id="molpay" class="molpay"> </div> -->
+  </div>
+
+
+  <!-- <p>
+    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
   </p>
+
+  <button ion-button block icon-right (click)='openBrowser()' >Open Browser
+    <ion-icon name="locate" ></ion-icon>
+  </button>
+
+  <button ion-button secondary menuToggle>Toggle Menu</button> -->
 </ion-content>
+
